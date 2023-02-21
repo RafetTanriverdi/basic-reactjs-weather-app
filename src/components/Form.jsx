@@ -1,14 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect,useState } from 'react'
 import axios from 'axios';
 
-function Form() {
+function Form({setInfo,setState}) {
     const [city,setCity] = useState("");
-    useEffect(()=>console.log(city,[city]));
+    
 
-    const handleChange=()=>{
+    const handleChange=async()=>{
         const api ='9591601b5da8060aaa7fcc42b9c18240';
-        const baseUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api}&units=metric`;
-      axios(baseUrl).then(data=>console.log(data));  
+        const baseUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api}&units=metric&lang=tr`;
+      await axios(baseUrl).then(res=>setInfo(res.data));  
+
+      setState(true);
+      
     }
   return (
     <div>
