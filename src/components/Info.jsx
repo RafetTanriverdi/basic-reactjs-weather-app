@@ -13,11 +13,11 @@ function Info({ info, state }) {
               {info.name},{info.sys.country}
             </p>
             <div className="genelDeger">
-              <p id="sicaklik">{Math.floor(info.main.temp)} °C</p> <WiSunset className='fa-c' />
+              <p id="sicaklik">Sıcaklık: {Math.floor(info.main.temp)} °C</p> <WiSunset className='fa-c' />
             </div>
             <p id='havaDurumu'>{info.weather[0].description}</p>
             <div className="his">
-              <p id="hissedilen">{Math.floor(info.main.feels_like)} °C</p> <WiSunset className='fa-c' />
+              <p id="hissedilen">Hissedilen: {Math.floor(info.main.feels_like)} °C</p> <WiSunset className='fa-c' />
             </div>
           </div> : null
 

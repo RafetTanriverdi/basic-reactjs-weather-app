@@ -14,8 +14,8 @@ function Form({setInfo,setState}) {
       
     }
   return (
-    <div>
-        <h1>Hava Durumu</h1>
+    <div className='input'>
+        <h1 >Hava Durumu</h1>
         <form  onSubmit={(e)=>{e.preventDefault();handleChange()}}>
             <div className="form">
                 <input onChange={(e)=>setCity(e.target.value)} type="text" className="inputText" placeholder='Şehir giriniz'/>

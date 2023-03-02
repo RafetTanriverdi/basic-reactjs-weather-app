@@ -2,4 +2,34 @@
   justify-content:center ;
   text-align: center;
   align-items: center;
+  background-image: url("https://wallpaperaccess.com/full/5466289.jpg");
+  height: 100vh;
+  margin-top: 0;
+  
+  
+}
+.input h1 {
+color:white;
+font-size: 45px;
+}
+
+.info {
+  padding: 25px 0;
+  color: white;
+}
+
+.info .genelDeger{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-c{
+  font-size: 25px;
+  margin-left: 5px;
+}
+.info .his{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
